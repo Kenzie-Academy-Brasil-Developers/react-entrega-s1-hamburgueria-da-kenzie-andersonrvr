@@ -1,3 +1,6 @@
+body {
+  animation: fade 1s forwards;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,11 +27,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
 }
