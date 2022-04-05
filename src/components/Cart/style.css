@@ -1,0 +1,170 @@
+.containerCart {
+  background: #f5f5f5;
+  border-radius: 5px 5px 5px 5px;
+
+  margin: 0 10px 10px 10px;
+  padding-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.containerCart > p {
+  background: #27ae60;
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  margin: 0;
+  padding: 10px 0px;
+  text-align: center;
+}
+.emptyCart {
+  margin-bottom: 20px;
+}
+.emptyCart > .firstP {
+  text-align: center;
+  color: #333333;
+  margin-top: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.emptyCart > .secondP {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #828282;
+}
+.cartProducts {
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0 10px;
+  overflow: scroll;
+  max-height: 200px;
+}
+.divCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 14px 0;
+}
+.imgInfos {
+  display: flex;
+}
+.imgInfos > figure,
+.imgInfos > figure > img {
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+.divInfosCart {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  justify-content: flex-start;
+}
+.spanName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+.spanCategory {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-top: 3px;
+}
+
+.divCart > button {
+  background-color: #f5f5f5;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bdbdbd;
+  border: none;
+  padding: 10px;
+}
+.divCart > button:hover {
+  color: #828282;
+}
+.cartValue {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+.valueLegenda {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.value {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+}
+.removeAll {
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.removeAll:hover {
+  background: #828282;
+  color: #e0e0e0;
+  border: 2px solid #828282;
+}
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .containerCart {
+    width: 90%;
+    margin-top: 10px;
+    height: 100%;
+    max-width: 400px;
+  }
+  .containerCart > p {
+    width: auto;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .containerCart {
+    width: 50%;
+    margin-top: 10px;
+    height: 100%;
+  }
+}
