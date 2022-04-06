@@ -1,3 +1,6 @@
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
@@ -36,11 +39,15 @@ function App() {
       )
     );
   };
-
+  const notify = () =>
+    toast("Não é possivel adicionar dois produtos iguais ao carrinho.");
   const handleClick = (id) => {
     let prodToAdd = products.find((e) => e.id == id);
     if (currentSale.includes(prodToAdd) === false) {
       setCurrentSale([...currentSale, prodToAdd]);
+    } else {
+      notify();
+      console.log("vai da nao");
     }
   };
 
@@ -72,6 +79,7 @@ function App() {
           totalCart={cartTotal}
           setTotalCart={setCartTotal}
         />
+        <ToastContainer />
       </div>
     </div>
   );
