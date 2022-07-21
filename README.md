@@ -7,6 +7,5 @@ Tecnologias utilizadas:
   CSS,
   HTML.
 
-Bibliotecas utilizadas:
-  React-toastify,
-  React-dom.
+Biblioteca utilizada:
+  React-toastify.
