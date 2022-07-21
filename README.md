@@ -9,3 +9,5 @@ Tecnologias utilizadas:
 
 Biblioteca utilizada:
   React-toastify.
+
+Implementado com Mobile First.
